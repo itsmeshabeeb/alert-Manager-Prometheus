@@ -6,10 +6,10 @@ username and password should be created in ses of aws and should be verified thr
 receivers:
   - name: "email"
     email_configs:
-      - to: "bnmanasa13@gmail.com"      # you@example.com
-        from: "bnmanasa13@gmail.com"  # alertmanager@example.com
-        smarthost: "email-smtp.us-east-1.amazonaws.com:587"
-        auth_username: "AKIAZSPX3FVREHS4P755"
-        auth_password: "BA0Ag2bP1deXKneBkOuGFFCcM7BXStK1gQI9XXX42KjZ"
+      - to: "@gmail.com"      # you@example.com
+        from: "@gmail.com"  # alertmanager@example.com
+        smarthost: "email-smtp.region.amazonaws.com:587"
+        auth_username: "$username of ses"
+        auth_password: "$password of ses"
         require_tls: true
         send_resolved: true
